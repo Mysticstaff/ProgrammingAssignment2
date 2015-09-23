@@ -3,6 +3,9 @@
 
 ## This function is almost exactly the same as the makeVec function.
 ## There are 4 functions: setMatrix, getMatrix, setInverse and getInverse.
+## setMatrix 'caches' a matrix, getMatrix retrieves the cached matrix,
+## setInverse (which is called by cacheSolve below) caches the matrix inverse,
+## and getInverse retrieves the cached inverse matrix.
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   setMatrix <- function (y = matrix()){
